@@ -1,1 +1,1 @@
-$ AutoSlide(자동슬라이드)
+# AutoSlide(자동슬라이드)
