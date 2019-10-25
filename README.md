@@ -1,3 +1,5 @@
 # 목차
-- First_test
-+ Second_test
+- ch2 : JAVA Test
+- ch3 : JAVA Test
+- JQtest : JQuery Test
+- Slider : JQuery Slide
