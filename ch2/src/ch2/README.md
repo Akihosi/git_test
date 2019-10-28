@@ -1,3 +1,4 @@
+# 목차
 - [CharTocode.java](#chartocodejava)
 - [CodeToChar.java](#codetocharjava)
 - [SpecialChar.java](#specialcharjava)
@@ -31,27 +32,30 @@
 >
 >> ## 풀이
 >> | 소스 | 풀이 |
->> | ---- | ---- |
 >> | char ch = 'A'; | char형 변수 ch를 선언하고, 문자 'A'를 저장 |
 >> | int code = (int)ch; | ch에 저장된 값을 int형으로 변환하여 저장한다. |
 >
 
 > # CodeToChar.java
+>> ## 소스
+>>```java
+>>public class CodeToChar {
 >>
-```java
-public class CodeToChar {
-
-	public static void main(String[] args) {
-		int code = 65; //또는 int code = 0x0041;
-		char ch = (char)code;
-		
-		System.out.println(code);
-		System.out.println(ch);
-	}
-
-}
-```
-
+>>	public static void main(String[] args) {
+>>		int code = 65; //또는 int code = 0x0041;
+>>		char ch = (char)code;
+>>		
+>>		System.out.println(code);
+>>		System.out.println(ch);
+>>	}
+>>
+>>}
+>>```
+>
+>> ## 풀이
+>> | 소스 | 풀이 |
+>> | ---- | ---- |
+>> | 
 # SpecialChar.java
 >>
 ```java
