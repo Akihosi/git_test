@@ -1,6 +1,6 @@
-- [Hello.java](hellojava)
+- [Hello.java](.hellojava)
 
-># Hello.java
+# Hello.java
 >>
 ```java
  public class Hello {
