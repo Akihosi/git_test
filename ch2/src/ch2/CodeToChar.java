@@ -3,7 +3,7 @@ package ch2;
 public class CodeToChar {
 
 	public static void main(String[] args) {
-		int code = 65; //¶Ç´Â int code = 0x0041;
+		int code = 65; //ë˜ëŠ” int code = 0x0041;
 		char ch = (char)code;
 		
 		System.out.println(code);

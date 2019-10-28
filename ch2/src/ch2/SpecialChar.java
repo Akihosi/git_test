@@ -3,8 +3,8 @@ package ch2;
 public class SpecialChar {
 
 	public static void main(String[] args) {
-		char single = '\''; // single = ''';¿Í °°ÀÌ ÇÒ ¼ö ¾ø´Ù
-		String dblOuote = "\"Hello\""; //Å«µû¿ÈÇ¥¸¦ Ãâ·ÂÇÏ·Á¸é ÀÌ·¸°Ô ÄÚµå¸¦ Â¥¸é µÈ´Ù.
+		char single = '\''; // single = ''';ì™€ ê°™ì´ í•  ìˆ˜ ì—†ë‹¤.
+		String dblOuote = "\"Hello\""; //í°ë”°ì˜´í‘œë¥¼ ì¶œë ¥í•˜ë ¤ë©´ ì´ë ‡ê²Œ í•œë‹¤.
 		String root = "c:\\";
 		
 		System.out.println(single);

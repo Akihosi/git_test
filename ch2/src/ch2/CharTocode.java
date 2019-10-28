@@ -3,8 +3,8 @@ package ch2;
 public class CharTocode {
 
 	public static void main(String[] args) {
-		char ch = 'A';		//char ch = '\u0041';·Î ¹Ù²ã½áµµ °°´Ù.
-		int code = (int)ch;	//ch¿¡ ÀúÀåµÈ °ªÀ» intÇüÀ¸·Î º¯È¯ÇÏ¿© ÀúÀåÇÑ´Ù.
+		char ch = 'A';		//char ch = '\u0041';ë¡œ ë°”ê¿” ì¨ë„ ê°™ë‹¤/
+		int code = (int)ch;	//chì— ì €ì¥ëœ ê°’ì„ intí˜•ìœ¼ë¡œ ë³€í™˜í•˜ì—¬ ì €ì¥í•œë‹¤.
 		
 		System.out.println(ch);
 		System.out.println(code);
