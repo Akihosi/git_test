@@ -32,6 +32,7 @@
 >
 >> ## 풀이
 >> | 소스 | 풀이 |
+>> | ---- | ---- |
 >> | char ch = 'A'; | char형 변수 ch를 선언하고, 문자 'A'를 저장 |
 >> | int code = (int)ch; | ch에 저장된 값을 int형으로 변환하여 저장한다. |
 >
@@ -52,72 +53,114 @@
 >>}
 >>```
 >
+>> ## 결과
+>> ```
+>> 65
+>> A
+>> ```
+>
 >> ## 풀이
 >> | 소스 | 풀이 |
 >> | ---- | ---- |
->> | 
+>> | int code = 65; | int형 변수 code를 선언하고 그 안에 65를 저장 |
+>> | char ch = (char)code; | int에 저장된 값을 char형으로 변환하여 저장한다. |
+>
 # SpecialChar.java
+>> ##소스
+>> ```java
+>>public class SpecialChar {
 >>
-```java
-public class SpecialChar {
-
-	public static void main(String[] args) {
-		char single = '\''; // single = ''';와 같이 할 수 없다.
-		String dblOuote = "\"Hello\""; //큰따옴표를 출력하려면 이렇게 한다.
-		String root = "c:\\";
-		
-		System.out.println(single);
-		System.out.println(dblOuote);
-		System.out.println(root);
-	} 
-
-}
-```
-
+>>	public static void main(String[] args) {
+>>		char single = '\''; // single = ''';와 같이 할 수 없다.
+>>		String dblOuote = "\"Hello\""; //큰따옴표를 출력하려면 이렇게 한다.
+>>		String root = "c:\\";
+>>		
+>>		System.out.println(single);
+>>		System.out.println(dblOuote);
+>>		System.out.println(root);
+>>	} 
+>>
+>> }
+>>```
+>>
+>> ##결과
+>> ```
+>> `
+>> "Hello"
+>> c:\
+>> ```
+>
+>> ## 풀이
+>> | 소스 | 풀이 |
+>> | ---- | ----|
+>> | char single = '\''; | 작은따옴표를 출력하는 방법 |
+>> | String dblOuote = "\"Hello\""; | 큰따옴표를 출력하는 방법 | 
+>> | String root = "c:\\" | String는 여러문자를 저장할수있어서 사용 |
+>
 # StringTest.java
+>> ##소스
+>> ```java
+>> public class StringTest {
 >>
-```java
-public class StringTest {
-
-	public static void main(String[] args) {
-		String a = 7 + " ";
-		String b = " " + 7;
-		String c = 7 + "";
-		String d = "" + 7;
-		String e = "" + "";
-		String f = 7 + 7 + "";
-		String g = "" + 7 + 7;
-		
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
-		System.out.println(d);
-		System.out.println(e);
-		System.out.println(f);
-		System.out.println(g);
-	}
-}
-```
-
+>>	public static void main(String[] args) {
+>>		String a = 7 + " ";
+>>		String b = " " + 7;
+>>		String c = 7 + "";
+>>		String d = "" + 7;
+>>		String e = "" + "";
+>>		String f = 7 + 7 + "";
+>>		String g = "" + 7 + 7;
+>>		
+>>		System.out.println(a);
+>>		System.out.println(b);
+>>		System.out.println(c);
+>>		System.out.println(d);
+>>		System.out.println(e);
+>>		System.out.println(f);
+>>		System.out.println(g);
+>>	}
+>> }
+>> ```
+>
+>> ##결과
+>> ```
+>> 7
+>>  7
+>> 7
+>> 7
+>> 
+>> 14
+>> 77
+>> ```
+>
 # ByteOverflow.java
+>> ## 소스
+>> ```java
+>> public class ByteOverflow {
 >>
-```java
-public class ByteOverflow {
-
-	public static void main(String[] args) {
-		byte b = 0;
-		int i = 0;
-		
-		for(int x=0; x <= 270; x++) {
-			System.out.print(b++);
-			System.out.print('\t');
-			System.out.println(i++);
-		}
-	}
- 
-}
-```
-
+>>	public static void main(String[] args) {
+>>		byte b = 0;
+>>		int i = 0;
+>>		
+>>		for(int x=0; x <= 270; x++) {
+>>			System.out.print(b++);
+>>			System.out.print('\t');
+>>			System.out.println(i++);
+>>		}
+>>	}
+>>
+>> }
+>> ```
+>
+>> ## 결과
+>> 결과값이 너무 많음
+>
+>> ## 풀이
+>> | 소스 | 풀이 |
+>> | ---- | ---- |
+>> | byte b = 0; | byte형 변수 b를 선언하고 0을 저장 |
+>> | int i = 0; | int형 변수 i를 선언하고 0을 저장 |
+>> | for(int x=0; x <= 270; x++) | 반복문을 사용해 0부터 270까지 1씩 증가시킨다 |
 # PrecisionTest.java
 >>
 ```java
