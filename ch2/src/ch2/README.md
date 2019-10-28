@@ -7,23 +7,36 @@
 - [CastingEx1.java](#castingex11java)
 - [CastingEx2.java](#castingex2java)
 
-# CharTocode.java
+> # CharTocode.java
+>> ## 소스
+>>```java
+>> public class CharTocode {
 >>
-```java
-public class CharTocode {
+>>	public static void main(String[] args) {
+>>		char ch = 'A';		//char ch = '\u0041';로 바꿔 써도 같다/
+>>		int code = (int)ch;	//ch에 저장된 값을 int형으로 변환하여 저장한다.
+>>		
+>>		System.out.println(ch);
+>>		System.out.println(code);
+>>	}
+>>
+>> }
+>> ```
+>
+>> ## 결과
+>> ```
+>> A
+>> 65
+>> ```
+>
+>> ## 풀이
+>> | 소스 | 풀이 |
+>> | ---- | ---- |
+>> | char ch = 'A'; | char형 변수 ch를 선언하고, 문자 'A'를 저장 |
+>> | int code = (int)ch; | ch에 저장된 값을 int형으로 변환하여 저장한다. |
+>
 
-	public static void main(String[] args) {
-		char ch = 'A';		//char ch = '\u0041';로 바꿔 써도 같다/
-		int code = (int)ch;	//ch에 저장된 값을 int형으로 변환하여 저장한다.
-		
-		System.out.println(ch);
-		System.out.println(code);
-	}
-
-}
-```
-
-# CodeToChar.java
+> # CodeToChar.java
 >>
 ```java
 public class CodeToChar {
