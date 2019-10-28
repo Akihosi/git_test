@@ -66,7 +66,7 @@
 >> | char ch = (char)code; | int에 저장된 값을 char형으로 변환하여 저장한다. |
 >
 # SpecialChar.java
->> ##소스
+>> ## 소스
 >> ```java
 >>public class SpecialChar {
 >>
@@ -83,7 +83,7 @@
 >> }
 >>```
 >>
->> ##결과
+>> ## 결과
 >> ```
 >> `
 >> "Hello"
@@ -98,7 +98,7 @@
 >> | String root = "c:\\" | String는 여러문자를 저장할수있어서 사용 |
 >
 # StringTest.java
->> ##소스
+>> ## 소스
 >> ```java
 >> public class StringTest {
 >>
@@ -122,7 +122,7 @@
 >> }
 >> ```
 >
->> ##결과
+>> ## 결과
 >> ```
 >> 7
 >>  7
@@ -153,7 +153,7 @@
 >> ```
 >
 >> ## 결과
->> 결과값이 너무 많음
+>> 결과값이 너무 많으므로 패스
 >
 >> ## 풀이
 >> | 소스 | 풀이 |
@@ -162,62 +162,100 @@
 >> | int i = 0; | int형 변수 i를 선언하고 0을 저장 |
 >> | for(int x=0; x <= 270; x++) | 반복문을 사용해 0부터 270까지 1씩 증가시킨다 |
 # PrecisionTest.java
+>> ## 소스
+>> ```java
+>> public class PrecisionTest {
 >>
-```java
-public class PrecisionTest {
-
-	public static void main(String[] args) {
-		float f = 1.2345678901234567890f;
-		double d = 1.2345678901234567890;
-		float f2 = 0.100000001f;
-		double d2 = 0.100000001;
-		double d3 = 0.1000000000000001;
-		
-		System.out.println(f);
-		System.out.println(d);
-		System.out.println(f2);
-		System.out.println(d2);
-		System.out.println(d3 );
-		
-	}
-
-}
-```
-
+>>	public static void main(String[] args) {
+>>		float f = 1.2345678901234567890f;
+>>		double d = 1.2345678901234567890;
+>>		float f2 = 0.100000001f;
+>>		double d2 = 0.100000001;
+>>		double d3 = 0.1000000000000001;
+>>		
+>>		System.out.println(f);
+>>		System.out.println(d);
+>>		System.out.println(f2);
+>>		System.out.println(d2);
+>>		System.out.println(d3 );
+>>		
+>>	}
+>>
+>> }
+>> ```
+>
+>> ## 결과
+>> 1.2345679
+>> 1.2345678901234567
+>> 0.1
+>> 0.100000001
+>> 0.1000000000000001
+>
 # CastingEx1.java
+>> ## 소스
+>> ```java
+>> public class CastingEx1 {
 >>
-```java
-public class CastingEx1 {
-
-	public static void main(String[] args) {
-		double d = 100.0;
-		int i = 100;
-		int result = i + (int)d;
-		
-		System.out.println("d=" + d);
-		System.out.println("i=" + i);
-		System.out.println("result=" +result);
-	}
-
-}
-```
-
+>>	public static void main(String[] args) {
+>>		double d = 100.0;
+>>		int i = 100;
+>>		int result = i + (int)d;
+>>		
+>>		System.out.println("d=" + d);
+>>		System.out.println("i=" + i);
+>>		System.out.println("result=" +result);
+>>	}
+>>
+>> }
+>> ```
+>
+>> ## 결과
+>> ```
+>> d=100.0
+>> i=100
+>> result=200
+>> ```
+>
+>> ## 풀이
+>> | 소스 | 풀이 |
+>> | ---- | ---- |
+>> | double d = 100.0; | double형 변수 d를 선언하고 100.0을 저장 |
+>> | int i = 100; | int형 변수 i를 선언하고 100을 저장 |
+>> | int result = i + (int)d; | int형 변수 result를 선언하고 double형 d를 int로 형변환하여 i 와 d를 더한값 |
+>
 # CastingEx2.java
+>> ## 소스
+>> ```java
+>> public class CastingEx2 {
 >>
-```java
-public class CastingEx2 {
-
-	public static void main(String[] args) {
-		byte b = 10;
-		int i = (int)b;
-		System.out.println("i=" + i);
-		System.out.println("b=" + b);
-		
-		int i2 = 300;
-		byte b2 = (byte)i2;
-		System.out.println("i2=" + i2);
-		System.out.println("b2=" + b2);
-	}
-
-}
-```
+>>	public static void main(String[] args) {
+>>		byte b = 10;
+>>		int i = (int)b;
+>>		System.out.println("i=" + i);
+>>		System.out.println("b=" + b);
+>>		
+>>		int i2 = 300;
+>>		byte b2 = (byte)i2;
+>>		System.out.println("i2=" + i2);
+>>		System.out.println("b2=" + b2);
+>>	}
+>>
+>> }
+>> ```
+>
+>> ## 결과
+>> ```
+>> i=10
+>> b=10
+>> i2=300
+>> b2=44
+>> ```
+>
+>> ## 풀이
+>> | 소스 | 풀이 |
+>> | ---- | ---- |
+>> | byte b = 10; | byte형 변수 b선언하고 10을 저장 |
+>> | int i = (int)b; | byte형 변수 b를 int형으로 바꾸고 int형 변수 i에 저장 |
+>> | int i2 = 300; | int형 변수 i2를 선언하고 300을 저장 |
+>> | byte b2 = (byte)i2; | int형 변수 i2를 byte형으로 바꾸고 byte형 변수 b2에 저장 |
+>
