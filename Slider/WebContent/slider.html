@@ -11,15 +11,15 @@
 <script>
 $(document).ready(function(){
 	var main = $('.bxslider').bxSlider({
-		mode: 'fade',
+		mode: 'fade', //이미지가 교체되는 방식 fade말고도 horizontal, vertical이 있다.
 		auto: true,		//자동으로 슬라이드
 		controls : true,	//좌우 화살표	
-		autoControls: true,	//stop,play
-		pager:true,	//페이징
-		pause: 5000, //자동슬라이드 시간
+		autoControls: true,	//시작 중지 버튼을 보여지게 합니다.
+		pager:true,	//페이징 바로가기 버튼
+		pause: 5000, //하나의 이미지가 멈춰서 보여지는 시간
 		autoDelay: 0,	
 		slideWidth: 500,	//이미지박스 크기
-		speed: 500,
+		speed: 500, //다음 이미지로 바뀌는데 걸리는 시간
 		stopAutoOnclick:true
 	});
   
